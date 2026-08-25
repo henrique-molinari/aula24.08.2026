@@ -18,14 +18,14 @@ if BANCO.lower() == "sqlite":
 
     import sqlite3
 
-    conn = sqlite3.connect("aula21082026.db")
+    conn = sqlite3.connect("aula24082026.db")
 
 else:
 
     from sqlalchemy import create_engine
 
     conn = create_engine(
-        "mysql+mysqlconnector://root:SUA_SENHA@localhost:3306/aula21082026"
+        "mysql+mysqlconnector://root:SUA_SENHA@localhost:3306/aula24082026"
     )
 
 print(f"\nBanco destino: {BANCO.upper()}")
